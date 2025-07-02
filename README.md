@@ -66,7 +66,7 @@ The system follows a layered architecture to ensure robust and scalable operatio
 4.  **Frontend Layer:** A web-based dashboard fetches data from the backend APIs, visualizes it, and allows users to interact with the system (e.g., manually activate the pump).
 
 
-```mermaid
+'''mermaid
 graph TD
     A[Soil Moisture Sensor] --> B(ESP32 Microcontroller);
     C[DHT11 Sensor (Temp/Humidity)] --> B;
@@ -76,7 +76,7 @@ graph TD
     F --> G[H2/MySQL Database];
     F -- REST API --> H[Web Dashboard (HTML/Thymeleaf/JS)];
     H -- User Commands --> F;
-```
+'''
 
 -----
 
