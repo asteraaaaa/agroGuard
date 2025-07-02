@@ -68,13 +68,13 @@ The system follows a layered architecture to ensure robust and scalable operatio
 
 ```mermaid
 graph TD
-    A[Soil Moisture Sensor] --> B(ESP32 Microcontroller);
-    C[DHT11 Sensor (Temp/Humidity)] --> B;
+    A["Soil Moisture Sensor"] --> B[ESP32 Microcontroller];
+    C["DHT11 Sensor (Temp/Humidity)"] --> B;
     B --> D[Water Pump];
-    B --> E(WiFi);
+    B --> E[WiFi];
     E --> F[Spring Boot Backend];
     F --> G[H2/MySQL Database];
-    F -- REST API --> H[Web Dashboard (HTML/Thymeleaf/JS)];
+    F -- REST API --> H["Web Dashboard (HTML/Thymeleaf/JS)"];
     H -- User Commands --> F;
 ```
 
