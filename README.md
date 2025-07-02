@@ -65,7 +65,6 @@ The system follows a layered architecture to ensure robust and scalable operatio
 3.  **Backend Layer:** A Java Spring Boot application receives sensor data, stores it in the database, and exposes RESTful APIs for the frontend.
 4.  **Frontend Layer:** A web-based dashboard fetches data from the backend APIs, visualizes it, and allows users to interact with the system (e.g., manually activate the pump).
 
-<!-- end list -->
 
 ```mermaid
 graph TD
